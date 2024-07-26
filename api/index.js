@@ -19,7 +19,7 @@ mongoose
   .catch((err) => console.error("MongoDB connection error:", err));
 
 const medicinesRoutes = require("./routes/medicines");
-app.use("/api/medicines", medicinesRoutes);
+app.use("/medicine", medicinesRoutes);
 app.get("/", (req, res) => res.send("Express on Vercel"));
 
 app.listen(PORT, () => {

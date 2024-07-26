@@ -19,6 +19,7 @@ const upload = multer({ storage: storage });
 // Create
 router.post("/", upload.single("image"), async (req, res) => {
   try {
+    // console.log(req.body);
     const medicine = new Medicine({
       ...req.body,
       imageUrl: req.file ? `/uploads/${req.file.filename}` : undefined,
