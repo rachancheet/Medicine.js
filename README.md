@@ -1,5 +1,5 @@
 ## Deployed on Personal ovh VPS
-## Test case:
+## Test case (command Prompt curl commands):
 
 ### add medicine
 
