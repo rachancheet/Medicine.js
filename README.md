@@ -1,5 +1,4 @@
-# due to issue on vps current deployment is down
-
+## Deployed on Personal ovh VPS
 ## Test case:
 
 ### add medicine
