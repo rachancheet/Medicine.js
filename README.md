@@ -1,9 +1,11 @@
-Test case:
-//add medicine
+## Test case:
+### add medicine
 curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Aspirin\", \"price\": 5.99, \"quantity\": 100, \"manufacturer\": \"Bayer\"}" https://api.rachancheet.me/api/medicines
-//add medicine with image(replace image.jpg with name)
+
+### add medicine with image(replace image.jpg with name)
 curl -X POST -H "Content-Type: multipart/form-data" -F "name=Ibuprofen" -F "price=7.99" -F "quantity=50" -F "manufacturer=Advil" -F "image=@image.jpg" https://api.rachancheet.me/api/medicines
-//all medicine
+
+### all medicine
 curl https://api.rachancheet.me/api/medicines
 
 curl https://api.rachancheet.me/api/medicines?manufacturer=Bayer
