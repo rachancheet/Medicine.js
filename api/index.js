@@ -20,6 +20,7 @@ mongoose
 
 const medicinesRoutes = require("./routes/medicines");
 app.use("/api/medicines", medicinesRoutes);
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
